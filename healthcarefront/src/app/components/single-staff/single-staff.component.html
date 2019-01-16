@@ -1,0 +1,13 @@
+<ul>
+  <li>
+    <h5>
+      <a [routerLink]="'/single-staff/' + staffInput._id"
+        [queryParams]="staffInput"
+      >
+        {{staffInput.full_name}}
+      </a>
+    </h5>
+    <p>{{staffInput.phone}}</p>
+    <p>{{staffInput.email}}</p>
+  </li>
+</ul>

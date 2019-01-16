@@ -1,0 +1,9 @@
+<form *ngIf="staff" #updateForm="ngForm" (ngSubmit)="updateStaff(updateForm)">
+  <label>Full Name: </label>
+  <input type="text" [(ngModel)]="staff.full_name" name="full_name">
+  <label>Phone: </label>
+  <input type="text" [(ngModel)]="staff.phone" name="phone">
+  <label>Email: </label>
+  <input type="email" [(ngModel)]="staff.email" name="email">
+  <input type="submit">
+</form>

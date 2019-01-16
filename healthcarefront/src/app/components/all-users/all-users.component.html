@@ -1,0 +1,11 @@
+<div *ngFor="let user of users">
+  <app-single-user
+    [usersInput] = "user"
+  >
+
+  </app-single-user>
+  <button
+    style="background: grey"
+    (click)="removeUser(user)"
+  >DELETE</button>
+</div>

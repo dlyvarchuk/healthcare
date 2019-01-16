@@ -1,0 +1,13 @@
+<ul>
+  <li>
+    <h5>
+      <a [routerLink]="'/single-user/' + usersInput._id"
+         [queryParams]="usersInput"
+      >
+        {{usersInput.login_name}}
+      </a>
+    </h5>
+    <p>{{usersInput.Password}}</p>
+    <p>{{usersInput.is_deleted}}</p>
+  </li>
+</ul>

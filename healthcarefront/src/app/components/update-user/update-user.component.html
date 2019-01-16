@@ -1,0 +1,7 @@
+<form *ngIf="user" #updateForm="ngForm" (ngSubmit)="updateUser(updateForm)">
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="user.login_name" name="login_name">
+  <label>Password:</label>
+  <input type="password" [(ngModel)]="user.Password"  name="Password">
+  <input type="submit">
+</form>
