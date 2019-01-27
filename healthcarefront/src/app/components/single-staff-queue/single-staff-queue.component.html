@@ -1,0 +1,14 @@
+<ul>
+  <li>
+    <h5>
+      <a [routerLink]="'/single-staff-queue/' + staffQueueInput._id"
+         [queryParams]="staffQueueInput"
+      >
+        {{staffQueueInput.staff_id}}
+      </a>
+    </h5>
+    <p>{{staffQueueInput.queue_member}}</p>
+    <p>{{staffQueueInput.date_time}}</p>
+    <p>{{staffQueueInput.is_completed}}</p>
+  </li>
+</ul>
