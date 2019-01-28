@@ -13,6 +13,11 @@ import { AllStaffsComponent } from './components/all-staffs/all-staffs.component
 import { SingleStaffComponent } from './components/single-staff/single-staff.component';
 import { UpdateStaffComponent } from './components/update-staff/update-staff.component';
 import { AllPatientsComponent } from './components/all-patients/all-patients.component';
+import { SinglePatientComponent } from './components/single-patient/single-patient.component';
+import { UpdatePatientComponent } from './components/update-patient/update-patient.component';
+import { AllStaffScheduleComponent } from './components/all-staff-schedule/all-staff-schedule.component';
+import { SingleStaffScheduleComponent } from './components/single-staff-schedule/single-staff-schedule.component';
+import { UpdateStaffScheduleComponent } from './components/update-staff-schedule/update-staff-schedule.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { AllPatientsComponent } from './components/all-patients/all-patients.com
     AllStaffsComponent,
     SingleStaffComponent,
     UpdateStaffComponent,
-    AllPatientsComponent
+    AllPatientsComponent,
+    SinglePatientComponent,
+    UpdatePatientComponent,
+    AllStaffScheduleComponent,
+    SingleStaffScheduleComponent,
+    UpdateStaffScheduleComponent
   ],
   imports: [
     BrowserModule,

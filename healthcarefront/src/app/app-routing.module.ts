@@ -6,6 +6,8 @@ import {UpdateUserComponent} from './components/update-user/update-user.componen
 import {AllStaffsComponent} from './components/all-staffs/all-staffs.component';
 import {UpdateStaffComponent} from './components/update-staff/update-staff.component';
 import {AllPatientsComponent} from './components/all-patients/all-patients.component';
+import {AllStaffScheduleComponent} from './components/all-staff-schedule/all-staff-schedule.component';
+import {UpdateStaffScheduleComponent} from './components/update-staff-schedule/update-staff-schedule.component';
 
 
 const routes: Routes = [
@@ -14,7 +16,9 @@ const routes: Routes = [
   {path: 'staffs', component: AllStaffsComponent},
   {path: 'patients', component: AllPatientsComponent},
   {path: 'single-user/:id', component: UpdateUserComponent},
-  {path: 'single-staff/:id', component: UpdateStaffComponent}
+  {path: 'single-staff/:id', component: UpdateStaffComponent},
+  {path: 'staffSchedule', component: AllStaffScheduleComponent},
+  {path: 'single-staff-schedule/:id', component: UpdateStaffScheduleComponent},
 ];
 
 @NgModule({
