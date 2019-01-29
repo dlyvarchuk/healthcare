@@ -9,6 +9,15 @@
       <h4>{{patientInput.middle_name}}</h4>
       <h4>{{patientInput.last_name}}</h4>
 
+    <h5>
+      <a [routerLink]="'/single-patient/' + patientInput._id"
+         [queryParams]="patientInput"
+      >
+        {{patientInput.first_name}}
+      </a>
+    </h5>
+    <p>{{patientInput.middle_name}}</p>
+    <p>{{patientInput.last_name}}</p>
     <p>{{patientInput.date_of_birth}}</p>
     <p>{{patientInput.country_of_birth}}</p>
     <p>{{patientInput.city_of_birth}}</p>
@@ -23,3 +32,9 @@
 </ul>
 
 
+    <p>{{patientInput.phone}}</p>
+    <p>{{patientInput.registration_address}}</p>
+    <p>{{patientInput.passport_id_card}}</p>
+    <p>{{patientInput.tin_id}}</p>
+  </li>
+</ul>

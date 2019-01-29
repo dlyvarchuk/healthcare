@@ -1,0 +1,11 @@
+<form *ngIf="staffQueue" #updateForm="ngForm" (ngSubmit)="updateStaffQueue(updateForm)">
+  <label>Staff: </label>
+  <input type="text" [(ngModel)]="staffQueue.staff_id" name="staff_id">
+  <label>Queue Member: </label>
+  <input type="text" [(ngModel)]="staffQueue.queue_member" name="queue_member">
+  <label>Date: </label>
+  <input type="date" [(ngModel)]="staffQueue.date_time" name="date_time">
+  <label>Completed: </label>
+  <input type="checkbox" [(ngModel)]="staffQueue.is_completed" name="is_completed">
+  <input type="submit">
+</form>

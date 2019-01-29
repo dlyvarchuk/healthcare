@@ -18,6 +18,11 @@ import { UpdatePatientComponent } from './components/update-patient/update-patie
 import { AllStaffScheduleComponent } from './components/all-staff-schedule/all-staff-schedule.component';
 import { SingleStaffScheduleComponent } from './components/single-staff-schedule/single-staff-schedule.component';
 import { UpdateStaffScheduleComponent } from './components/update-staff-schedule/update-staff-schedule.component';
+import { SinglePatientComponent } from './components/single-patient/single-patient.component';
+import { UpdatePatientComponent } from './components/update-patient/update-patient.component';
+import { AllStaffQueueComponent } from './components/all-staff-queue/all-staff-queue.component';
+import { SingleStaffQueueComponent } from './components/single-staff-queue/single-staff-queue.component';
+import { UpdateStaffQueueComponent } from './components/update-staff-queue/update-staff-queue.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,12 @@ import { UpdateStaffScheduleComponent } from './components/update-staff-schedule
     AllStaffScheduleComponent,
     SingleStaffScheduleComponent,
     UpdateStaffScheduleComponent
+    AllPatientsComponent,
+    SinglePatientComponent,
+    UpdatePatientComponent,
+    AllStaffQueueComponent,
+    SingleStaffQueueComponent,
+    UpdateStaffQueueComponent
   ],
   imports: [
     BrowserModule,

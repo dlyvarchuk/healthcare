@@ -1,0 +1,22 @@
+<form #staffQueueForm="ngForm" (ngSubmit)="createStaffQueue(staffQueueForm)">
+  <label>Staff:</label>
+  <input type="text" ngModel name="staff_id">
+  <label>Queue Member:</label>
+  <input type="text" ngModel name="queue_member">
+  <label>Date:</label>
+  <input type="datetime-local" ngModel name="date_time">
+  <label>Completed:</label>
+  <input type="checkbox" ngModel name="is_completed">
+  <input type="submit">
+</form>
+
+<div *ngFor="let staffQueue of staffQueues">
+  <app-single-staff-queue
+    [staffQueueInput]="staffQueue"
+  >
+  </app-single-staff-queue>
+  <button
+    style="background: grey"
+    (click)="removeStaffQueue(staffQueue)"
+  >DELETE</button>
+</div>
