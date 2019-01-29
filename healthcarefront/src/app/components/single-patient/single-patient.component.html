@@ -1,0 +1,25 @@
+<ul>
+  <li>
+    <a [routerLink]="'/single-patient/' + patientInput._id"
+        [queryParams]="patientInput"
+       >
+      {{patientInput.first_name}}
+    </a>
+      <h4>{{patientInput.first_name}}</h4>
+      <h4>{{patientInput.middle_name}}</h4>
+      <h4>{{patientInput.last_name}}</h4>
+
+    <p>{{patientInput.date_of_birth}}</p>
+    <p>{{patientInput.country_of_birth}}</p>
+    <p>{{patientInput.city_of_birth}}</p>
+    <p>{{patientInput.gender}}</p>
+    <p>{{patientInput.registration_id}}</p>
+    <p>{{patientInput.id_card}}</p>
+    <p>{{patientInput.tin_id}}</p>
+    <p>{{patientInput.image_url}}</p>
+    <p>{{patientInput.is_deleted}}</p>
+    <p>{{patientInput.deleted_date}}</p>
+  </li>
+</ul>
+
+
