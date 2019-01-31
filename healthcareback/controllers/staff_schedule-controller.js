@@ -1,9 +1,11 @@
-let Staff_schedule = require('../models/Staff_schedule');
+let Staff_schedule = require('../models/StaffSchedule');
 
 exports.getAll = async function getAll(req, res, next){
     try {
+        console.log(await Staff_schedule.find({}));
         return res.json(await Staff_schedule.find({}));
     } catch (e) {
+        console.log(e);
         return next(e);
     }
 };

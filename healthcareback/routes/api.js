@@ -11,6 +11,6 @@ router.use('/staff', StaffRouter);
 router.use('/patient', PatientRouter);
 router.use('/staff_queue', StaffQueueRouter);
 router.use('/patient_visit_queue', PatientVisitQueueRouter);
-router.use('/staff_schedule', Staff_scheduleRouter)
+router.use('/staffSchedule', Staff_scheduleRouter)
 
 module.exports = router;

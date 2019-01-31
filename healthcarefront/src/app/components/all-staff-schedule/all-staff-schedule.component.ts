@@ -24,6 +24,7 @@ export class AllStaffScheduleComponent implements OnInit {
 
   private getStaffSchedules() {
     this.staffScheduleService.getAll().subscribe((res) => {
+      console.log(res);
       this.staffSchedules = res ? res : [];
     });
   }
