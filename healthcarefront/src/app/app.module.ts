@@ -21,6 +21,9 @@ import { SingleStaffQueueComponent } from './components/single-staff-queue/singl
 import { UpdateStaffQueueComponent } from './components/update-staff-queue/update-staff-queue.component';
 import {SinglePatientComponent} from './components/single-patient/single-patient.component';
 import {UpdatePatientComponent} from './components/update-patient/update-patient.component';
+import { AllPatientVisitQueueComponent } from './components/all-patient-visit-queue/all-patient-visit-queue.component';
+import { SinglePatientVisitQueueComponent } from './components/single-patient-visit-queue/single-patient-visit-queue.component';
+import { UpdatePatientVisitQueueComponent } from './components/update-patient-visit-queue/update-patient-visit-queue.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import {UpdatePatientComponent} from './components/update-patient/update-patient
     UpdatePatientComponent,
     AllStaffQueueComponent,
     SingleStaffQueueComponent,
-    UpdateStaffQueueComponent
+    UpdateStaffQueueComponent,
+    AllPatientVisitQueueComponent,
+    SinglePatientVisitQueueComponent,
+    UpdatePatientVisitQueueComponent
   ],
   imports: [
     BrowserModule,

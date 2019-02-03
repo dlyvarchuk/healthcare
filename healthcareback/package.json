@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@angular/animations": "^7.2.3",
+    "@angular/cdk": "^7.3.0",
+    "@angular/material": "^7.3.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jquery": "^3.3.1",

@@ -1,0 +1,24 @@
+<form #patientVisitQueueForm="ngForm" (ngSubmit)="createPatientVisitQueue(patientVisitQueueForm)">
+  <label>Queue:</label>
+  <input type="text" ngModel name="queue_member">
+  <label>Date:</label>
+  <input type="datetime-local" ngModel name="date_time">
+  <label>Patient:</label>
+  <input type="text" ngModel name="patient_id">
+  <label>Staff:</label>
+  <input type="text" ngModel name="staff_id">
+  <label>Visit:</label>
+  <input type="text" ngModel name="visit_id">
+  <input type="submit">
+</form>
+
+<div *ngFor="let patientVisitQueue of patientVisitQueues">
+  <app-single-patient-visit-queue
+    [patientVisitQueueInput]="patientVisitQueue"
+  >
+  </app-single-patient-visit-queue>
+  <button
+    style="background: grey"
+    (click)="removePatientVisitQueue(patientVisitQueue)"
+  >DELETE</button>
+</div>

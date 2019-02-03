@@ -11,6 +11,8 @@ import {UpdateStaffScheduleComponent} from './components/update-staff-schedule/u
 import {UpdatePatientComponent} from './components/update-patient/update-patient.component';
 import {AllStaffQueueComponent} from './components/all-staff-queue/all-staff-queue.component';
 import {UpdateStaffQueueComponent} from './components/update-staff-queue/update-staff-queue.component';
+import {AllPatientVisitQueueComponent} from './components/all-patient-visit-queue/all-patient-visit-queue.component';
+import {UpdatePatientVisitQueueComponent} from './components/update-patient-visit-queue/update-patient-visit-queue.component';
 
 
 const routes: Routes = [
@@ -18,13 +20,15 @@ const routes: Routes = [
   {path: 'users', component: AllUsersComponent},
   {path: 'staffs', component: AllStaffsComponent},
   {path: 'patients', component: AllPatientsComponent},
-  {path: 'staff_queue', component: AllStaffQueueComponent},
+  {path: 'staff-queue', component: AllStaffQueueComponent},
   {path: 'single-user/:id', component: UpdateUserComponent},
   {path: 'single-staff/:id', component: UpdateStaffComponent},
   {path: 'staffSchedule', component: AllStaffScheduleComponent},
   {path: 'single-staff-schedule/:id', component: UpdateStaffScheduleComponent},
   {path: 'single-patient/:id', component: UpdatePatientComponent},
-  {path: 'single-staff-queue/:id', component: UpdateStaffQueueComponent}
+  {path: 'single-staff-queue/:id', component: UpdateStaffQueueComponent},
+  {path: 'patient_visit_queue', component: AllPatientVisitQueueComponent},
+  {path: 'single-patient-visit-queue/:id', component: UpdatePatientVisitQueueComponent}
 ];
 
 @NgModule({

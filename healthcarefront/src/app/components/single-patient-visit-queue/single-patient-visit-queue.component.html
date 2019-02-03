@@ -1,0 +1,13 @@
+<ul>
+  <li>
+    <a [routerLink]="'/single-patient-visit-queue/' + patientVisitQueueInput._id"
+       [queryParams]="patientVisitQueueInput"
+    >
+      {{patientVisitQueueInput.queue_member}}
+    </a>
+    <h4>{{patientVisitQueueInput.date_time}}</h4>
+    <h4>{{patientVisitQueueInput.patient_id}}</h4>
+    <h4>{{patientVisitQueueInput.staff_id}}</h4>
+    <h4>{{patientVisitQueueInput.visit_id}}</h4>
+  </li>
+</ul>
