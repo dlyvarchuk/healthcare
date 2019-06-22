@@ -15,18 +15,18 @@ export class StaffQueueService {
   ) { }
 
   getById(id: string): Observable<StaffQueue> {
-    return this.http.get<StaffQueue>(`${this.host}/api/staff_queue/${id}`);
+    return this.http.get<StaffQueue>(`${this.host}/api/staff-queue/${id}`);
   }
   getAll(): Observable<StaffQueue[]> {
-    return this.http.get<StaffQueue[]>(`${this.host}/api/staff_queue`);
+    return this.http.get<StaffQueue[]>(`${this.host}/api/staff-queue`);
   }
   create(staffQueue: StaffQueue): Observable<StaffQueue> {
-    return this.http.post<StaffQueue>(`${this.host}/api/staff_queue`, staffQueue);
+    return this.http.post<StaffQueue>(`${this.host}/api/staff-queue`, staffQueue);
   }
   update(id: string, staffQueue: StaffQueue): Observable<StaffQueue> {
-    return this.http.put<StaffQueue>(`${this.host}/api/staff_queue/${id}`, staffQueue);
+    return this.http.put<StaffQueue>(`${this.host}/api/staff-queue/${id}`, staffQueue);
   }
   delete(id: string): Observable<StaffQueue> {
-    return this.http.delete<StaffQueue>(`${this.host}/api/staff_queue/${id}`);
+    return this.http.delete<StaffQueue>(`${this.host}/api/staff-queue/${id}`);
   }
 }

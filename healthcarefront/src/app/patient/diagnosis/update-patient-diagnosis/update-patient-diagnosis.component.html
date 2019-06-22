@@ -1,0 +1,13 @@
+<form fxLayout="column" fxLayoutAlign="center center" *ngIf="patientDiagnosis" #updateForm="ngForm" (ngSubmit)="updatePatientDiagnosis(updateForm)">
+  <label>Diagnosis: </label>
+  <input type="text" [(ngModel)]="patientDiagnosis.diagnosis_id" name="diagnosis_id">
+  <label>Name: </label>
+  <input type="text" [(ngModel)]="patientDiagnosis.diagnosis_name" name="diagnosis_name">
+  <label>Date: </label>
+  <input type="date" [(ngModel)]="patientDiagnosis.reported_date" name="reported_date">
+  <label>Patient: </label>
+  <input type="text" [(ngModel)]="patientDiagnosis.patient_id" name="patient_id">
+  <label>Staff: </label>
+  <input type="text" [(ngModel)]="patientDiagnosis.reported_staff_id" name="reported_staff_id">
+  <input type="submit">
+</form>

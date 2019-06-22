@@ -1,0 +1,37 @@
+<section class="all-patient-visit-queue" fxFlex fxLayout fxLayoutAlign="center">
+  <mat-table fxFlex.xs="100%" fxFlex="800px" [dataSource]="patientVisitQueues">
+    <ng-container matColumnDef="patient_id">
+      <mat-header-cell *matHeaderCellDef>Patient</mat-header-cell>
+      <mat-cell *matCellDef="let queue">{{ queue.patient_id }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="queue_member">
+      <mat-header-cell *matHeaderCellDef>Queue number</mat-header-cell>
+      <mat-cell *matCellDef="let queue">{{ queue.queue_member | number }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="date_time">
+      <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
+      <mat-cell *matCellDef="let queue">{{ queue.date_time | date }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="staff_id">
+      <mat-header-cell *matHeaderCellDef>Staff</mat-header-cell>
+      <mat-cell *matCellDef="let queue">{{ queue.staff_id }}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</section>
+
+<!--
+<div *ngFor="let patientVisitQueue of patientVisitQueues">
+  <app-single-patient-visit-queue
+    [patientVisitQueueInput]="patientVisitQueue"
+  >
+  </app-single-patient-visit-queue>
+  <button mat-icon-button color="accent"
+    (click)="removePatientVisitQueue(patientVisitQueue)"
+  ><mat-icon>delete</mat-icon></button>
+</div>
+-->

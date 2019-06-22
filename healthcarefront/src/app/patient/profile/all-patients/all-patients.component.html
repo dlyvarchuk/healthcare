@@ -1,0 +1,62 @@
+<!--
+<form fxLayout="column" fxLayoutAlign="center center" #patientUsersForm="ngForm" (ngSubmit)="createUser(patientUsersForm)">
+  <label>Name:</label>
+  <input type="text" ngModel name="login_name">
+  <label>Password:</label>
+  <input type="password" ngModel name="Password">
+  <button mat-raised-button color="primary">Submit</button>
+</form>
+-->
+<section class="patient-profile" fxFlex fxLayout fxLayoutAlign="center">
+  <form fxLayout="column" fxLayoutAlign="center" fxFlex.xs="100%" fxFlex="400px" *ngIf="patient" #patientUsersForm="ngForm" (ngSubmit)="createUser(patientUsersForm)">
+    <mat-card fxFlex.xs="100%" fxLayout="column">
+      <mat-card-title fxLayoutAlign="center">Enter your personal data:</mat-card-title>
+      <label>First Name: </label>
+      <input type="text" [(ngModel)]="patient.first_name" name="first_name">
+      <label>Last Name: </label>
+      <input type="text" [(ngModel)]="patient.last_name" name="last_name">
+      <label>Middle Name: </label>
+      <input type="text" [(ngModel)]="patient.middle_name" name="middle_name">
+      <mat-form-field>
+        <input matInput [(ngModel)]="patient.date_of_birth" [matDatepicker]="patientBOD" placeholder="Date of birth" ngModel name="date_od_birth">
+        <mat-datepicker-toggle matSuffix [for]="patientBOD"></mat-datepicker-toggle>
+        <mat-datepicker #patientBOD></mat-datepicker>
+      </mat-form-field>
+      <label>Gender: </label>
+      <mat-radio-group [(ngModel)]="patient.gender" name="gender">
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="other">Other</mat-radio-button>
+      </mat-radio-group>
+      <label>Phone: </label>
+      <input type="text" [(ngModel)]="patient.phone" name="phone">
+      <label>Country of Birth: </label>
+      <input type="text" [(ngModel)]="patient.country_of_birth" name="country_of_birth">
+      <label>City of Birth: </label>
+      <input type="text" [(ngModel)]="patient.city_of_birth" name="city_of_birth">
+      <label>Address: </label>
+      <input type="text" [(ngModel)]="patient.registration_address" name="registration_address">
+      <label>Passport: </label>
+      <input type="text" [(ngModel)]="patient.passport_id_card" name="passport_id_card">
+      <label>Registration ID: </label>
+      <input type="text" [(ngModel)]="patient.registration_id" name="registration_id">
+      <label>ID Card: </label>
+      <input type="text" [(ngModel)]="patient.id_card" name="id_card">
+      <label>Tin ID: </label>
+      <input type="text" [(ngModel)]="patient.tin_id" name="tin_id">
+      <mat-card-actions fxLayoutAlign="center">
+        <button type="submit" mat-button>Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</section>
+<div *ngFor="let patient of patients">
+  <app-single-patient
+    [patientInput]="patient"
+  >
+  </app-single-patient>
+  <button
+    mat-icon-button color="accent"
+    (click)="removePatient(patient)"
+  ><mat-icon>delete</mat-icon></button>
+</div>

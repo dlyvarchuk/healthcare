@@ -1,0 +1,10 @@
+<section class="staff-schedule" fxLayout="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="20px" fxLayoutAlign="center">
+  <div *ngFor="let staffSchedule of staffSchedules">
+    <mat-card fxFlex.xs="100%" fxFlex="400px">
+      <app-single-staff-schedule
+        [staffScheduleInput]="staffSchedule"
+      >
+      </app-single-staff-schedule>
+    </mat-card>
+  </div>
+</section>

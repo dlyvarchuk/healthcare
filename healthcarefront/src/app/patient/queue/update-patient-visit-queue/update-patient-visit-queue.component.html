@@ -1,0 +1,13 @@
+<form fxLayout="column" fxLayoutAlign="center center" *ngIf="patientVisitQueue" #updateForm="ngForm" (ngSubmit)="updatePatientVisitQueue(updateForm)">
+  <label>Queue Member: </label>
+  <input type="text" [(ngModel)]="patientVisitQueue.queue_member" name="queue_member">
+  <label>Date: </label>
+  <input type="date" [(ngModel)]="patientVisitQueue.date_time" name="date_time">
+  <label>Staff: </label>
+  <input type="text" [(ngModel)]="patientVisitQueue.staff_id" name="staff_id">
+  <label>Patient: </label>
+  <input type="text" [(ngModel)]="patientVisitQueue.patient_id" name="patient_id">
+  <label>Visit: </label>
+  <input type="text" [(ngModel)]="patientVisitQueue.visit_id" name="visit_id">
+  <input type="submit">
+</form>

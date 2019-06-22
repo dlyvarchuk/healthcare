@@ -1,0 +1,15 @@
+<ul>
+  <li>
+    <a [routerLink]="'/single-patient-visit/' + patientVisitInput._id"
+       [queryParams]="patientVisitInput"
+    >
+      {{patientVisitInput.diagnosis_id}}
+    </a>
+    <h4>{{patientVisitInput.reported_date}}</h4>
+    <h4>{{patientVisitInput.notes}}</h4>
+    <h4>{{patientVisitInput.patient_id}}</h4>
+    <h4>{{patientVisitInput.visit_id}}</h4>
+    <h4>{{patientVisitInput.is_high_risk}}</h4>
+    <h4>{{patientVisitInput.is_contagious}}</h4>
+  </li>
+</ul>

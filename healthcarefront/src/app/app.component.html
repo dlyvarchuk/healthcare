@@ -1,25 +1,12 @@
-<ul>
-  <li>
-    <a routerLink="">HOME</a>
-  </li>
-  <li>
-    <a routerLink="users">USERS</a>
-  </li>
-  <li>
-    <a routerLink="staffs">STAFF LIST</a>
-  </li>
-  <li>
-    <a routerLink="patients">PATIENT LIST</a>
-  </li>
-  <li>
-    <a routerLink="staff-queue">STAFF QUEUE LIST</a>
-  </li>
-  <li>
-    <a routerLink="staffSchedule">STAFF SCHEDULE</a>
-  </li>
-  <li>
-    <a routerLink="patient_visit_queue">PATIENT VISIT QUEUE</a>
-  </li>
-</ul>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-<router-outlet></router-outlet>

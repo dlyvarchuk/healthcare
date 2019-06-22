@@ -1,0 +1,13 @@
+<ul>
+  <li>
+    <a [routerLink]="'/single-patient-diagnosis/' + patientDiagnosisInput._id"
+       [queryParams]="patientDiagnosisInput"
+    >
+      {{patientDiagnosisInput.diagnosis_id}}
+    </a>
+    <h4>{{patientDiagnosisInput.diagnosis_name}}</h4>
+    <h4>{{patientDiagnosisInput.reported_date}}</h4>
+    <h4>{{patientDiagnosisInput.patient_id}}</h4>
+    <h4>{{patientDiagnosisInput.reported_staff_id}}</h4>
+  </li>
+</ul>

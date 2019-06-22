@@ -1,0 +1,25 @@
+<section class="all-patient-visit-queue" fxLayout fxLayoutAlign="center">
+  <form fxLayout="column" fxLayoutAlign="center" fxFlex.xs="100%" fxFlex="300px" #patientVisitQueueForm="ngForm" (ngSubmit)="createPatientVisitQueue(patientVisitQueueForm)">
+    <mat-card fxFlex.xs="100%" fxLayout="column">
+      <mat-card-title fxLayoutAlign="center">Appointment</mat-card-title>
+      <mat-card-content fxLayoutAlign="center" fxLayout="column">
+        <mat-form-field>
+          <mat-select placeholder="Staff manager" ngModel name="staff_id">
+            <mat-option *ngFor="let staff of staffs" [value]="staff._id">
+              {{staff.full_name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [matDatepicker]="patientVisitDate" placeholder="Date of visit" ngModel name="date_time"
+                 [min]="minDate">
+          <mat-datepicker-toggle matSuffix [for]="patientVisitDate"></mat-datepicker-toggle>
+          <mat-datepicker #patientVisitDate></mat-datepicker>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions fxLayoutAlign="center">
+        <button mat-raised-button color="primary">Apply</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</section>

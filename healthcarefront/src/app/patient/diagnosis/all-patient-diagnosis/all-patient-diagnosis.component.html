@@ -1,0 +1,69 @@
+<section class="patient-diagnosis" fxLayout="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="20px" fxLayoutAlign="center">
+  <form fxLayout="column" fxLayoutAlign="center" fxFlex.xs="100%" fxFlex="400px" #patientDiagnosisForm="ngForm" (ngSubmit)="createPatientDiagnosis(patientDiagnosisForm)">
+    <mat-card fxFlex.xs="100%" fxFlex="400px" fxLayout="column">
+      <mat-card-title fxLayoutAlign="center">Enter patient diagnosis:</mat-card-title>
+      <mat-form-field>
+        <mat-select placeholder="Patient" ngModel name="patient_id">
+          <mat-option *ngFor="let patient of patients" [value]="patient._id">
+            {{patient.first_name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+        <input type="text" placeholder="Diagnosis" ngModel name="diagnosis_id">
+        <input type="text" placeholder="Name" ngModel name="diagnosis_name">
+        <mat-form-field>
+          <input matInput [matDatepicker]="patientDiagnosisDate" placeholder="Date of patient visit" ngModel name="reported_date"
+          [min]="minDate">
+          <mat-datepicker-toggle matSuffix [for]="patientDiagnosisDate"></mat-datepicker-toggle>
+          <mat-datepicker #patientDiagnosisDate></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Staff manager" ngModel name="reported_staff_id">
+            <mat-option *ngFor="let staff of staffs" [value]="staff._id">
+              {{staff.full_name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-card-actions fxLayoutAlign="center">
+          <button type="submit" mat-button>Submit</button>
+        </mat-card-actions>
+    </mat-card>
+  </form>
+
+  <mat-table fxFlex.xs="100%" fxFlex="800px"  [dataSource]="patientDiagnoses">
+    <ng-container matColumnDef="reported_date">
+      <mat-header-cell *matHeaderCellDef>Date</mat-header-cell>
+      <mat-cell *matCellDef="let diagnosis">{{ diagnosis.reported_date | date }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="diagnosis_name">
+      <mat-header-cell *matHeaderCellDef>Diagnosis</mat-header-cell>
+      <mat-cell *matCellDef="let diagnosis">{{ diagnosis.diagnosis_name }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="patient_id">
+      <mat-header-cell *matHeaderCellDef>Patient</mat-header-cell>
+      <mat-cell *matCellDef="let diagnosis">{{ diagnosis.patient_id }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="reported_staff_id">
+      <mat-header-cell *matHeaderCellDef>Staff reported</mat-header-cell>
+      <mat-cell *matCellDef="let diagnosis">{{ diagnosis.reported_staff_id }}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</section>
+
+<!--
+<div *ngFor="let patientDiagnosis of patientDiagnoses">
+  <app-single-patient-diagnosis
+    [patientDiagnosisInput]="patientDiagnosis"
+  >
+  </app-single-patient-diagnosis>
+  <button mat-icon-button color="accent"
+          (click)="removePatientDiagnosis(patientDiagnosis)"
+  ><mat-icon>delete</mat-icon></button>
+</div>
+-->

@@ -1,0 +1,39 @@
+<!--
+<form fxLayout="column" fxLayoutAlign="center center" #usersForm="ngForm" (ngSubmit)="createUser(usersForm)">
+  <label>Name:</label>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Your name" ngModel name="login_name">
+  </mat-form-field>
+  <label>Password:</label>
+  <mat-form-field>
+    <input type="password" matInput placeholder="Your password" ngModel name="Password">
+  </mat-form-field>
+  <button mat-raised-button color="primary">Submit</button>
+</form>
+-->
+<section class="staff-profile" fxFlex fxLayout fxLayoutAlign="center">
+  <form fxLayout="column" fxLayoutAlign="center" fxFlex.xs="100%" fxFlex="400px" *ngIf="staff" #usersForm="ngForm" (ngSubmit)="createUser(usersForm)">
+    <mat-card fxFlex.xs="100%" fxFlex="400px" fxLayout="column">
+      <mat-card-title fxLayoutAlign="center">Enter your personal data:</mat-card-title>
+      <label>Full Name: </label>
+      <input type="text" [(ngModel)]="staff.full_name" name="full_name">
+      <label>Phone: </label>
+      <input type="text" [(ngModel)]="staff.phone" name="phone">
+      <label>Email: </label>
+      <input type="email" [(ngModel)]="staff.email" name="email">
+      <mat-card-actions fxLayoutAlign="center">
+        <button type="submit" mat-button>Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</section>
+<div *ngFor="let staff of staffs">
+  <app-single-staff
+    [staffInput]="staff"
+  >
+  </app-single-staff>
+  <button
+    mat-icon-button color="accent"
+    (click)="removeStaff(staff)"
+  ><mat-icon>delete</mat-icon></button>
+</div>

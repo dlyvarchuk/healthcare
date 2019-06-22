@@ -1,0 +1,17 @@
+<form fxLayout="column" fxLayoutAlign="center center" *ngIf="patientVisit" #updateForm="ngForm" (ngSubmit)="updatePatientVisit(updateForm)">
+  <label>Diagnosis: </label>
+  <input type="text" [(ngModel)]="patientVisit.diagnosis_id" name="diagnosis_id">
+  <label>Date: </label>
+  <input type="date" [(ngModel)]="patientVisit.reported_date" name="reported_date">
+  <label>Notes: </label>
+  <input type="text" [(ngModel)]="patientVisit.notes" name="notes">
+  <label>Patient: </label>
+  <input type="text" [(ngModel)]="patientVisit.patient_id" name="patient_id">
+  <label>Visit: </label>
+  <input type="text" [(ngModel)]="patientVisit.visit_id" name="visit_id">
+  <label>High Risk: </label>
+  <input type="checkbox" [(ngModel)]="patientVisit.is_high_risk" name="is_high_risk">
+  <label>Contagious: </label>
+  <input type="checkbox" [(ngModel)]="patientVisit.is_contagious" name="is_contagious">
+  <input type="submit">
+</form>

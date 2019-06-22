@@ -1,0 +1,82 @@
+<section class="patient-visit" fxLayout="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="20px" fxLayoutAlign="center">
+  <form fxLayout="column" fxLayoutAlign="center" fxFlex.xs="100%" fxFlex="400px" #patientVisitForm="ngForm" (ngSubmit)="createPatientVisit(patientVisitForm)">
+    <mat-card fxFlex.xs="100%" fxFlex="400px" fxLayout="column">
+      <mat-card-title fxLayoutAlign="center">Enter patient visit notes:</mat-card-title>
+      <mat-form-field>
+        <mat-select placeholder="Patient" ngModel name="patient_id">
+          <mat-option *ngFor="let patient of patients" [value]="patient._id">
+            {{patient.first_name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Diagnosis" ngModel name="diagnosis_id">
+          <mat-option *ngFor="let diagnosis of patientDiagnoses" [value]="diagnosis._id">
+            {{diagnosis.diagnosis_name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput [matDatepicker]="patientVisitDate" placeholder="Date of patient visit" ngModel name="reported_date"
+        [min]="minDate">
+        <mat-datepicker-toggle matSuffix [for]="patientVisitDate"></mat-datepicker-toggle>
+        <mat-datepicker #patientVisitDate></mat-datepicker>
+      </mat-form-field>
+      <input type="text" placeholder="Visit notes" ngModel name="notes">
+      <input type="text" placeholder="Visit number" ngModel name="visit_id">
+      <mat-checkbox labelPosition="before" ngModel name="is_high_risk" color="primary">High Risk:</mat-checkbox>
+      <mat-checkbox labelPosition="before" ngModel name="is_contagious" color="primary">Contagious:</mat-checkbox>
+      <mat-card-actions fxLayoutAlign="center">
+        <button type="submit" mat-button>Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+
+  <mat-table fxFlex.xs="100%" fxFlex="800px" [dataSource]="patientVisits">
+
+    <ng-container matColumnDef="patient_id">
+      <mat-header-cell *matHeaderCellDef>Patient</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.patient_id }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="diagnosis_id">
+      <mat-header-cell *matHeaderCellDef>Diagnosis</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.diagnosis_id }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="notes">
+      <mat-header-cell *matHeaderCellDef>Visit notes</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.notes }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="is_high_risk">
+      <mat-header-cell *matHeaderCellDef>High risk</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.is_high_risk }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="is_contagious">
+      <mat-header-cell *matHeaderCellDef>Contagious</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.is_contagious }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="reported_date">
+      <mat-header-cell *matHeaderCellDef>Date reported</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.reported_date | date }}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+</section>
+
+<!--
+<div *ngFor="let patientVisit of patientVisits">
+  <app-single-patient-visit
+    [patientVisitInput]="patientVisit"
+  >
+  </app-single-patient-visit>
+  <button mat-icon-button color="accent"
+    (click)="removePatientVisit(patientVisit)"
+  ><mat-icon>delete</mat-icon></button>
+</div>
+-->

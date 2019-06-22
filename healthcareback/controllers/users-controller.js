@@ -16,6 +16,16 @@ exports.getById = async function getById(req, res, next){
     }
 }
 
+exports.getByLoginName = async function getByLoginName(req, res, next){
+    try {
+        return res.json(await Users.findOne(
+            { "login_name" : req.login_name }
+        ));
+    } catch (e) {
+        return next(e);
+    }
+}
+
 exports.create = async function create(req, res, next){
     try {
         return res.json(await Users.create(req.body));

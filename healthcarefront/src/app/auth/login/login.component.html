@@ -1,0 +1,14 @@
+<section class="login-form">
+  <form fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <mat-form-field>
+      <input type="email" matInput placeholder="Your email" ngModel name="email" email required
+             #emailInput="ngModel">
+      <mat-error *ngIf="emailInput.hasError('required')">e-mail is invalid</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" matInput placeholder="Your password" ngModel name="password" required minlength="6">
+    </mat-form-field>
+    <mat-checkbox labelPosition="before" ngModel name="is_staff" color="primary">Check in if a staff user:</mat-checkbox>
+    <button mat-raised-button color="primary">Submit</button>
+  </form>
+</section>

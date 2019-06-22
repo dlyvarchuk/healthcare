@@ -15,18 +15,18 @@ export class PatientVisitQueueService {
   ) { }
 
   getById(id: string): Observable<PatientVisitQueue> {
-    return this.http.get<PatientVisitQueue>(`${this.host}/api/patient_visit_queue/${id}`);
+    return this.http.get<PatientVisitQueue>(`${this.host}/api/patient-visit-queue/${id}`);
   }
   getAll(): Observable<PatientVisitQueue[]> {
-    return this.http.get<PatientVisitQueue[]>(`${this.host}/api/patient_visit_queue`);
+    return this.http.get<PatientVisitQueue[]>(`${this.host}/api/patient-visit-queue`);
   }
   create(patientVisitQueue: PatientVisitQueue): Observable<PatientVisitQueue> {
-    return this.http.post<PatientVisitQueue>(`${this.host}/api/patient_visit_queue`, patientVisitQueue);
+    return this.http.post<PatientVisitQueue>(`${this.host}/api/patient-visit-queue`, patientVisitQueue);
   }
   update(id: string, patientVisitQueue: PatientVisitQueue): Observable<PatientVisitQueue> {
-    return this.http.put<PatientVisitQueue>(`${this.host}/api/patient_visit_queue/${id}`, patientVisitQueue);
+    return this.http.put<PatientVisitQueue>(`${this.host}/api/patient-visit-queue/${id}`, patientVisitQueue);
   }
   delete(id: string): Observable<PatientVisitQueue> {
-    return this.http.delete<PatientVisitQueue>(`${this.host}/api/patient_visit_queue/${id}`);
+    return this.http.delete<PatientVisitQueue>(`${this.host}/api/patient-visit-queue/${id}`);
   }
 }

@@ -17,6 +17,9 @@ export class UsersService {
   getById(id: string): Observable<Users> {
     return this.http.get<Users>(`${this.host}/api/users/${id}`);
   }
+  getByLoginName(login_name: string): Observable<Users> {
+    return this.http.get<Users>(`${this.host}/api/users/${login_name}`);
+  }
   getAll(): Observable<Users[]> {
     return this.http.get<Users[]>(`${this.host}/api/users`);
   }

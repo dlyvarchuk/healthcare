@@ -1,0 +1,30 @@
+<section class="patient-visit" fxFlex fxLayout fxLayoutAlign="center">
+  <mat-table fxFlex.xs="100%" fxFlex="800px" [dataSource]="patientVisits">
+    <ng-container matColumnDef="diagnosis_id">
+      <mat-header-cell *matHeaderCellDef>Diagnosis</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.diagnosis_id }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="notes">
+      <mat-header-cell *matHeaderCellDef>Visit notes</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.notes }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="is_high_risk">
+      <mat-header-cell *matHeaderCellDef>High risk</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.is_high_risk }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="is_contagious">
+      <mat-header-cell *matHeaderCellDef>Contagious</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.is_contagious }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="reported_date">
+      <mat-header-cell *matHeaderCellDef>Date reported</mat-header-cell>
+      <mat-cell *matCellDef="let visit">{{ visit.reported_date | date }}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</section>

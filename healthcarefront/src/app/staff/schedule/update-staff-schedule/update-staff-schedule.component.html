@@ -1,0 +1,19 @@
+<form fxLayout="column" fxLayoutAlign="center center" *ngIf="staffSchedule" #updateForm="ngForm" (ngSubmit)="updateStaffSchedule(updateForm)">
+  <label>Staff:</label>
+  <input type="text" [(ngModel)]="staffSchedule.staff_id" name="staff_id">
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="staffSchedule.name" name="name">
+  <label>Surname:</label>
+  <input type="text" [(ngModel)]="staffSchedule.surname" name="surname">
+  <label>Working Hours:</label>
+  <input type="text" [(ngModel)]="staffSchedule.working_hours" name="working_hours">
+  <label>Working Days:</label>
+  <input type="text" [(ngModel)]="staffSchedule.working_days" name="working_days">
+  <label>On Vacation: </label>
+  <input type="checkbox" [(ngModel)]="staffSchedule.on_vacation" name="on_vacation">
+  <label>Sick Leave: </label>
+  <input type="checkbox" [(ngModel)]="staffSchedule.sick_leave" name="sick_leave">
+  <label>Day Off: </label>
+  <input type="checkbox" [(ngModel)]="staffSchedule.day_off" name="day_off">
+  <input type="submit">
+</form>

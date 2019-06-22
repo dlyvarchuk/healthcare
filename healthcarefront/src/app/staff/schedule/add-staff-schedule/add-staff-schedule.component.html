@@ -1,0 +1,38 @@
+<section class="staff-schedule" fxLayout="column" fxLayout.gt-md="row" fxLayoutGap.gt-md="20px" fxLayoutAlign="center">
+  <form fxLayout="column" fxLayoutAlign="center" fxFlex.xs="100%" fxFlex="400px" #staffScheduleForm="ngForm" (ngSubmit)="createStaffSchedule(staffScheduleForm)">
+    <mat-card fxFlex.xs="100%" fxFlex="400px" fxLayout="column">
+      <mat-card-title fxLayoutAlign="center">Enter staff schedule:</mat-card-title>
+      <mat-form-field>
+        <mat-select placeholder="Staff managers" ngModel name="staff_id">
+          <mat-option *ngFor="let staff of staffs" [value]="staff._id">
+            {{staff.full_name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <input type="text" placeholder="Name" ngModel name="name">
+      <input type="text" placeholder="Surname" ngModel name="surname">
+      <input type="text" placeholder="Working days" ngModel name="working_days">
+      <input type="text" placeholder="Working hours" ngModel name="working_hours">
+      <mat-checkbox labelPosition="before" ngModel name="on_vacation" color="primary">On Vacation:</mat-checkbox>
+      <mat-checkbox labelPosition="before" ngModel name="sick_leave" color="primary">Sick Leave:</mat-checkbox>
+      <mat-checkbox labelPosition="before" ngModel name="day_off" color="primary">Day Off:</mat-checkbox>
+      <mat-card-actions fxLayoutAlign="center">
+        <button type="submit" mat-button [disabled]="!isAdminStaff()">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+  <div *ngFor="let staffSchedule of staffSchedules">
+    <mat-card fxFlex.xs="100%" fxFlex="400px">
+      <app-single-staff-schedule
+        [staffScheduleInput]="staffSchedule"
+      >
+      </app-single-staff-schedule>
+      <button mat-icon-button color="accent" [disabled]="!isAdminStaff()"
+              (click)="removeStaffSchedule(staffSchedule)"
+      ><mat-icon>delete</mat-icon></button>
+    </mat-card>
+  </div>
+</section>
+
+
+

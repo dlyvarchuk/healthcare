@@ -1,0 +1,26 @@
+<form fxLayout="column" fxLayoutAlign="center center" #staffQueueForm="ngForm" (ngSubmit)="createStaffQueue(staffQueueForm)">
+  <label>Staff:</label>
+  <input type="text" ngModel name="staff_id">
+  <label>Queue Member:</label>
+  <input type="text" ngModel name="queue_member">
+  <label>Date:</label>
+  <mat-form-field>
+    <input matInput [matDatepicker]="staffQueueDate" placeholder="Date of staff queue" ngModel name="date_time"
+    [min]="minDate">
+    <mat-datepicker-toggle matSuffix [for]="staffQueueDate"></mat-datepicker-toggle>
+    <mat-datepicker #staffQueueDate></mat-datepicker>
+  </mat-form-field>
+  <mat-checkbox labelPosition="before" ngModel name="is_completed" color="primary">Completed:</mat-checkbox>
+  <button mat-raised-button color="primary">Submit</button>
+</form>
+
+<div *ngFor="let staffQueue of staffQueues">
+  <app-single-staff-queue
+    [staffQueueInput]="staffQueue"
+  >
+  </app-single-staff-queue>
+  <button
+    mat-icon-button color="accent"
+    (click)="removeStaffQueue(staffQueue)"
+  ><mat-icon>delete</mat-icon></button>
+</div>

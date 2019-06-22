@@ -2,12 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d218f5d-57d3-4fe1-bf2f-8939a3a1f0ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/patient_diagnosis-controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/patient_visit-controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/PatientDiagnosis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/PatientVisit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/patient_diagnosis-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/patient_visit-router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/users-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-patient-visit-queue/all-patient-visit-queue.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-patient-visit-queue/all-patient-visit-queue.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-patient-visit-queue/all-patient-visit-queue.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-patients/all-patients.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-patients/all-patients.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-patients/all-patients.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staff-queue/all-staff-queue.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staff-queue/all-staff-queue.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staff-queue/all-staff-queue.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staff-schedule/all-staff-schedule.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staff-schedule/all-staff-schedule.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staff-schedule/all-staff-schedule.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staffs/all-staffs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staffs/all-staffs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-staffs/all-staffs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-users/all-users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/components/all-users/all-users.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-patient-visit-queue/single-patient-visit-queue.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-patient-visit-queue/single-patient-visit-queue.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-patient-visit-queue/single-patient-visit-queue.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-patient/single-patient.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-patient/single-patient.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-patient/single-patient.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff-queue/single-staff-queue.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff-queue/single-staff-queue.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff-queue/single-staff-queue.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff-schedule/single-staff-schedule.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff-schedule/single-staff-schedule.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff-schedule/single-staff-schedule.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff/single-staff.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff/single-staff.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/single-staff/single-staff.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-patient-visit-queue/update-patient-visit-queue.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-patient-visit-queue/update-patient-visit-queue.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-patient-visit-queue/update-patient-visit-queue.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-patient/update-patient.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-patient/update-patient.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-patient/update-patient.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff-queue/update-staff-queue.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff-queue/update-staff-queue.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff-queue/update-staff-queue.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff-schedule/update-staff-schedule.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff-schedule/update-staff-schedule.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff-schedule/update-staff-schedule.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff/update-staff.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff/update-staff.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-staff/update-staff.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-user/update-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/components/update-user/update-user.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/services/patient-visit-queue.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/services/patient-visit-queue.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/services/staff-queue.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/services/staff-queue.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/services/staffSchedule.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/app/services/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/app/services/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthcarefront/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../healthcarefront/src/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,28 +93,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/StaffSchedule.js">
+        <entry file="file://$PROJECT_DIR$/routes/users-router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/patient_visit_queue-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="150">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/staff_queue-controller.js">
+        <entry file="file://$PROJECT_DIR$/controllers/users-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="58" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="58" />
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -54,22 +113,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="195">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/patient_visit_queue-router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -79,37 +129,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/users-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Staff.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="19" selection-start-line="4" selection-start-column="8" selection-end-line="23" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/PatientVisitQueue.js">
+        <entry file="file://$PROJECT_DIR$/routes/patient-router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Patient.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -130,6 +153,7 @@
       <find>staffs</find>
       <find>staff_type_id</find>
       <find>Password</find>
+      <find>staffSchedule</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,10 +163,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/users-router.js" />
         <option value="$PROJECT_DIR$/routes/staff-router.js" />
         <option value="$PROJECT_DIR$/routes/patient-router.js" />
-        <option value="$PROJECT_DIR$/controllers/users-controller.js" />
         <option value="$PROJECT_DIR$/controllers/staff-controller.js" />
         <option value="$PROJECT_DIR$/controllers/patient-controller.js" />
         <option value="$PROJECT_DIR$/controllers/staff_queue-controller.js" />
@@ -151,10 +173,19 @@
         <option value="$PROJECT_DIR$/models/PatientVisitQueue.js" />
         <option value="$PROJECT_DIR$/controllers/patient_visit_queue.js" />
         <option value="$PROJECT_DIR$/routes/patient_visit_queue.js" />
-        <option value="$PROJECT_DIR$/routes/api.js" />
         <option value="$PROJECT_DIR$/models/Staff.js" />
         <option value="$PROJECT_DIR$/models/Patient.js" />
         <option value="$PROJECT_DIR$/models/Users.js" />
+        <option value="$PROJECT_DIR$/models/PatientVisit.js" />
+        <option value="$PROJECT_DIR$/models/PatientDiagnosis.js" />
+        <option value="$PROJECT_DIR$/controllers/patient_visit.js" />
+        <option value="$PROJECT_DIR$/routes/patient_visit-router.js" />
+        <option value="$PROJECT_DIR$/routes/patient_diagnosis-router.js" />
+        <option value="$PROJECT_DIR$/routes/api.js" />
+        <option value="$PROJECT_DIR$/controllers/patient_visit-controller.js" />
+        <option value="$PROJECT_DIR$/controllers/patient_diagnosis-controller.js" />
+        <option value="$PROJECT_DIR$/controllers/users-controller.js" />
+        <option value="$PROJECT_DIR$/routes/users-router.js" />
       </list>
     </option>
   </component>
@@ -177,25 +208,11 @@
               <item name="healthcareback" type="b2602c69:ProjectViewProjectNode" />
               <item name="healthcareback" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="healthcareback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="healthcareback" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="healthcareback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="healthcareback" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="healthcareback" type="b2602c69:ProjectViewProjectNode" />
-              <item name="healthcareback" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,6 +233,14 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="PatientVisit.js" type="MongoRunConfiguration" factoryName="Mongo" temporary="true">
+      <module name="healthcareback" />
+      <setting name="path" value="$PROJECT_DIR$/models/PatientVisit.js" />
+      <setting name="shellParams" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -245,20 +270,34 @@
       <workItem from="1549113252389" duration="599000" />
       <workItem from="1549185888742" duration="3438000" />
       <workItem from="1549196613521" duration="2600000" />
+      <workItem from="1549483572210" duration="291000" />
+      <workItem from="1549486062706" duration="2579000" />
+      <workItem from="1549998082465" duration="599000" />
+      <workItem from="1550395086295" duration="3169000" />
+      <workItem from="1551007867084" duration="3343000" />
+      <workItem from="1551015456551" duration="857000" />
+      <workItem from="1551016790172" duration="2987000" />
+      <workItem from="1551123763323" duration="2712000" />
+      <workItem from="1551615695267" duration="10245000" />
+      <workItem from="1554754367342" duration="118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45132000" />
+    <option name="totallyTimeSpent" value="72032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.19027181" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.2067239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5020747" side_tool="true" weight="0.24964234" />
       <window_info id="npm" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="UI Designer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -268,32 +307,34 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.32596686" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.40607736" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32831737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.35336193" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.35264665" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/staff_queue-router.js">
+    <entry file="file://$PROJECT_DIR$/controllers/staff_queue-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="540">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users-router.js">
+    <entry file="file://$PROJECT_DIR$/routes/staff_queue-router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -304,59 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/patient-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/patient-router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/staff-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/StaffQueue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/StaffSchedule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/staff_queue-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/users-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -367,6 +359,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/StaffQueue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/patient_visit.js" />
+    <entry file="file://$PROJECT_DIR$/routes/patient_visit_queue-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/patient_visit-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" lean-forward="true" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/staff_schedule-controller.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/patient-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/staff-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Patient.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -374,38 +415,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/PatientVisitQueue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/patient_visit_queue-router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="1" column="15" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/patient_visit_queue-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="38" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PatientVisit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/patient_diagnosis-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/staff_schedule-router.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/StaffSchedule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/patient_diagnosis-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/patient_visit-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/PatientDiagnosis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/users-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/patient-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
